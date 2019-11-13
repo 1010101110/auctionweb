@@ -6,9 +6,9 @@
   "scripts": {
     "start": "electron ."
   },
-  "repository": "",
-  "author": "jonathan hiatt",
-  "license": "",
+  "repository": "https://github.com/1010101110/auctionator-auctionweb",
+  "author": "1010101110",
+  "license": "https://github.com/1010101110/auctionweb",
   "devDependencies": {
     "electron": "^7.0.0"
   },

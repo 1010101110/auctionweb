@@ -10,11 +10,17 @@ const store = new Store();
 let tray, win, watcher, watchertimeout
 
 app.on('ready', async function(){
+  //make sure electron default window doesn't pop up, we have to create hidden window
+  //we never use this, just a blank window
   win = new BrowserWindow({ show: false });
+  //the actual gui of our application
   tray = new Tray(path.join(__dirname,'icon.png'))
   tray.setToolTip('Auctionweb')
 
+  //create the context menu for tray
   initMenu()
+
+  //start the file watcher
   initWatcher()
 })
 
